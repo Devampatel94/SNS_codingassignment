@@ -1,20 +1,36 @@
 # SNS_codingassignment
 Coding assignment Group3
-# Methodology
-The project involves the following steps:
+# Signal Filtering Project
 
-# Implementing Low Pass, High Pass, and Band Pass Filters:
-Low Pass Filter: Allows low-frequency components of the input signal to pass through while attenuating high-frequency components.
-High Pass Filter: Allows high-frequency components of the input signal to pass through while attenuating low-frequency components.
-Band Pass Filter: Allows a specific range of frequencies to pass through while attenuating frequencies outside the desired band.
-# Convolving Each Filter with the Input Signal:
-Convolution is a mathematical operation that combines two functions, such as the filter and the input signal, to produce a third function.
-The convolution of the filter and the input signal results in the filtered output signal.
-This step applies each filter (Low Pass, High Pass, and Band Pass) to the input signal to obtain the corresponding filtered outputs.
-# Comparing the Filtered Outputs with the Given Output Signal:
-The filtered outputs obtained in the previous step are compared with the given output signal.
-Correlation is used as the comparison metric, which measures the similarity between the filtered outputs and the given output signal.
-Correlation values range from -1 to 1, with 1 indicating a perfect match, 0 indicating no correlation, and -1 indicating a perfect inverse correlation.
-# Determining the Best-Matched Filter:
-The correlation results for each filter (Low Pass, High Pass, and Band Pass) are analyzed to determine which filter best matches the given output signal.
-The filter with the highest correlation value is considered the best-matched filter, as it indicates the type of filtering that was applied to the input signal to produce the given output signal.
+## Overview
+
+This project aims to infer the type of filtering applied to an input signal based on the given output signal. It involves implementing low-pass, high-pass, and band-pass filters, convolving each filter with the input signal, comparing the filtered outputs with the given output signal using correlation, and determining the best-matched filter.
+
+## Methodology
+
+### 1. Implementing Filters
+
+- **Low Pass Filter:** Allows low-frequency components to pass through while attenuating high-frequency components.
+- **High Pass Filter:** Allows high-frequency components to pass through while attenuating low-frequency components.
+- **Band Pass Filter:** Allows a specific range of frequencies to pass through while attenuating frequencies outside the desired band.
+
+### 2. Convolution
+
+- Convolution is performed to combine each filter with the input signal, resulting in the filtered output signals (ylp(t), yhp(t), ybp(t)).
+
+### 3. Comparison
+
+- The filtered output signals are compared with the given output signal using correlation.
+- Correlation values range from -1 to 1, with 1 indicating a perfect match, 0 indicating no correlation, and -1 indicating a perfect inverse correlation.
+
+### 4. Determining the Best-Matched Filter
+
+- The correlation results for each filter are analyzed to determine the best-matched filter.
+- The filter with the highest correlation value indicates the type of filtering applied to the input signal.
+
+## Usage
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/signal-filtering-project.git
