@@ -27,7 +27,9 @@ This project aims to infer the type of filtering applied to an input signal base
 
 - The correlation results for each filter are analyzed to determine the best-matched filter.
 - The filter with the highest correlation value indicates the type of filtering applied to the input signal.
-
+### 5.Audio playing
+- To play the audio, download the file in.wav format first
+- then use the headphone to hear the clear voice
 ## Usage
 
 1. Clone the repository:
